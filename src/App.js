@@ -13,7 +13,7 @@ function App() {
       <GlobalStyle />
       <Header />
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path='/popular' element={<Home />} />
         <Route path='/popular' element={<Popular />} />
         <Route path='/latest' element={<Latest />} />
         <Route path='/movie/:id' element={<Single />} />
