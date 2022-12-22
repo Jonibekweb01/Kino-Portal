@@ -1,5 +1,11 @@
+import { StyledContainer } from "../../app.styles"
+
 export const Home = () => {
     return (
-        <div>Home</div>
+        <>
+            <StyledContainer>
+                <h1 style={{ fontFamily: "sans-serif" }}>Home✔️</h1>
+            </StyledContainer>
+        </>
     )
 }

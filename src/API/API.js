@@ -1,7 +1,7 @@
 import axios from "axios";
 
-const API_KEY = 'c7939dff7821a7120fe1c75e54498f24'
-const baseURL = 'https://api.themoviedb.org/3/';
+export const API_KEY = 'c7939dff7821a7120fe1c75e54498f24'
+export const baseURL = 'https://api.themoviedb.org/3/';
 export const baseImgURL = 'https://image.tmdb.org/t/p/w500/'
 
 export const apis = {
@@ -17,4 +17,14 @@ export const apis = {
             api_key: API_KEY,
         },
     }),
+    getMovieRek: (id) => axios.get(baseURL + `/movie/${id}/recommendations`, {
+        params: {
+            api_key: API_KEY,
+        },
+    }),
+    // getPersons: (id) => axios.get(baseURL + `/person/${id}/movie_credits`, {
+    //     params: {
+    //         api_key: API_KEY,
+    //     },
+    // }),
 }

@@ -1,7 +1,7 @@
 import { baseImgURL } from "../../API/API"
 import { StyleCardImg, StyleDate, StyledBoxTitle, StyledCard, StyledScore, StyledTitleCard } from "./card.styles"
 
-export const Card = ({ title, poster_path, vote_average, id }) => {
+export const Card = ({ title, poster_path, vote_average, id, backdrop_path }) => {
     return (
         <>
             <StyledCard to={`/movie/${id}`}>

@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 
 export const StyledSingleMovie = styled.div`
+/* margin-bottom: 20px; */
 height: 88vh;
     background-image: ${(props) =>
         props.img
@@ -46,4 +47,17 @@ export const StyledText = styled.p`
     color: white;
     font-family: sans-serif;
     line-height:30px;
+`
+
+export const StyledRec = styled.div`
+    background-color: #032541FF;
+    padding: 20px 0;
+`;
+
+export const StyledRecBox = styled.div`
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
 `
